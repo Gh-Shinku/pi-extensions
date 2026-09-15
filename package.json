@@ -1,0 +1,43 @@
+{
+	"name": "pi-extensions",
+	"version": "0.0.0",
+	"description": "Pi Coding Agent extensions.",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"format": "biome format --write .",
+		"lint": "biome check .",
+		"typecheck": "tsc --noEmit",
+		"test": "vitest run packages/*/test",
+		"check": "npm run lint && npm run typecheck && npm test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Gh-Shinku/pi-extensions.git"
+	},
+	"keywords": [
+		"pi",
+		"pi-coding-agent",
+		"extensions"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Gh-Shinku/pi-extensions/issues"
+	},
+	"homepage": "https://github.com/Gh-Shinku/pi-extensions#readme",
+	"workspaces": [
+		"packages/*"
+	],
+	"pi": {
+		"extensions": [
+			"./packages/pi-runtime-settings/src/index.ts"
+		]
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.5.13",
+		"@earendil-works/pi-coding-agent": "0.85.1",
+		"@types/node": "^26.5.1",
+		"typescript": "^7.0.2",
+		"vitest": "^5.0.1"
+	}
+}

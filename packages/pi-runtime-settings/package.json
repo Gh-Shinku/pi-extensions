@@ -1,0 +1,30 @@
+{
+	"name": "@shinku/pi-runtime-settings",
+	"version": "0.1.0",
+	"description": "Inspect the effective runtime settings of the active Pi session.",
+	"type": "module",
+	"files": [
+		"src",
+		"README.md",
+		"LICENSE"
+	],
+	"pi": {
+		"extensions": [
+			"./src/index.ts"
+		]
+	},
+	"scripts": {
+		"typecheck": "tsc --noEmit",
+		"test": "vitest run"
+	},
+	"keywords": [
+		"pi",
+		"pi-coding-agent",
+		"diagnostics",
+		"runtime-settings"
+	],
+	"license": "MIT",
+	"peerDependencies": {
+		"@earendil-works/pi-coding-agent": ">=0.85.1 <0.86.0"
+	}
+}
