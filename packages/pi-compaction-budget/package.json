@@ -1,7 +1,7 @@
 {
-	"name": "@shinku/pi-runtime-settings",
+	"name": "@shinku/pi-compaction-budget",
 	"version": "0.1.0",
-	"description": "Inspect the effective runtime settings of the active Pi session.",
+	"description": "Show the summarization output budget Pi really grants before /compact.",
 	"type": "module",
 	"files": [
 		"src",
@@ -21,10 +21,15 @@
 		"pi",
 		"pi-coding-agent",
 		"diagnostics",
-		"runtime-settings"
+		"compaction",
+		"context"
 	],
 	"license": "MIT",
 	"peerDependencies": {
-		"@earendil-works/pi-coding-agent": ">=0.85.1 <0.86.0"
+		"@earendil-works/pi-coding-agent": ">=0.85.1 <0.86.0",
+		"@earendil-works/pi-tui": ">=0.85.1 <0.86.0"
+	},
+	"devDependencies": {
+		"@earendil-works/pi-tui": "0.85.1"
 	}
 }

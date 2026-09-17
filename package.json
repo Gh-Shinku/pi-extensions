@@ -8,7 +8,7 @@
 		"format": "biome format --write .",
 		"lint": "biome check .",
 		"typecheck": "tsc --noEmit",
-		"test": "vitest run packages/*/test",
+		"test": "vitest run",
 		"check": "npm run lint && npm run typecheck && npm test"
 	},
 	"repository": {
@@ -30,7 +30,7 @@
 	],
 	"pi": {
 		"extensions": [
-			"./packages/pi-runtime-settings/src/index.ts"
+			"./packages/pi-compaction-budget/src/index.ts"
 		]
 	},
 	"devDependencies": {
